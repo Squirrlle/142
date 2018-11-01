@@ -1,0 +1,24 @@
+16:37:40 **** Incremental Build of configuration Debug for project Project_2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Terminal.o" "..\\src\\Terminal.cpp" 
+..\src\Terminal.cpp: In member function 'void Terminal::startNewSeason()':
+..\src\Terminal.cpp:97:4: error: break statement not within loop or switch
+    break;
+    ^~~~~
+In file included from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\alloc_traits.h:36:0,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h:61,
+                 from c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:62,
+                 from ..\src\Buffer.h:3,
+                 from ..\src\Terminal.h:3,
+                 from ..\src\Terminal.cpp:1:
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\alloc_traits.h: In instantiation of 'static void std::allocator_traits<_Alloc>::deallocate(_Alloc&, std::allocator_traits<_Alloc>::pointer, std::allocator_traits<_Alloc>::size_type) [with _Alloc = std::map<int, Player, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, Player> > >; std::allocator_traits<_Alloc>::pointer = std::pair<const int, Player>*; std::allocator_traits<_Alloc>::size_type = unsigned int]':
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:178:19:   required from 'void std::_Vector_base<_Tp, _Alloc>::_M_deallocate(std::_Vector_base<_Tp, _Alloc>::pointer, std::size_t) [with _Tp = int; _Alloc = std::map<std::__cxx11::basic_string<char>, Player>; std::_Vector_base<_Tp, _Alloc>::pointer = std::pair<const int, Player>*; std::size_t = unsigned int]'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:160:22:   required from 'std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = int; _Alloc = std::map<std::__cxx11::basic_string<char>, Player>]'
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:259:15:   required from 'std::vector<_Tp, _Alloc>::vector() [with _Tp = int; _Alloc = std::map<std::__cxx11::basic_string<char>, Player>]'
+..\src\Buffer.h:44:5:   required from here
+c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\alloc_traits.h:308:13: error: 'class std::map<int, Player, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::pair<const std::__cxx11::basic_string<char>, Player> > >' has no member named 'deallocate'; did you mean 'get_allocator'?
+       { __a.deallocate(__p, __n); }
+         ~~~~^~~~~~~~~~
+
+16:37:40 Build Finished (took 631ms)
+

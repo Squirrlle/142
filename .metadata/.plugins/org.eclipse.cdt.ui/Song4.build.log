@@ -1,0 +1,10 @@
+19:12:52 **** Incremental Build of configuration Debug for project Song4 ****
+Info: Internal Builder is used for build
+g++ -o Song4.exe "scr\\Song.o" "scr\\main.o" 
+scr\main.o: In function `ZNK4Song5titleB5cxx11Ev':
+C:\Users\hjcad\Desktop\School\CS\CS\Programs\Song4\Debug/../scr/Song.cpp:3: multiple definition of `operator<<(std::ostream&, Song const&)'
+scr\Song.o:C:\Users\hjcad\Desktop\School\CS\CS\Programs\Song4\Debug/../scr/Song.cpp:3: first defined here
+collect2.exe: error: ld returned 1 exit status
+
+19:12:53 Build Finished (took 299ms)
+

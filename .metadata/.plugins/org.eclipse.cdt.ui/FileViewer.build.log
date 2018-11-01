@@ -1,0 +1,34 @@
+08:26:18 **** Rebuild of configuration Debug for project FileViewer ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FileViewer.o" "..\\src\\FileViewer.cpp" 
+In file included from ..\src\FileViewer.h:2:0,
+                 from ..\src\FileViewer.cpp:1:
+..\src\Buffer.h: In member function 'void Buffer::move_to_next_page()':
+..\src\Buffer.h:29:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (ix_top_line_ + window_height_ < v_lines_.size())
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Buffer.o" "..\\src\\Buffer.cpp" 
+In file included from ..\src\Buffer.cpp:1:0:
+..\src\Buffer.h: In member function 'void Buffer::move_to_next_page()':
+..\src\Buffer.h:29:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (ix_top_line_ + window_height_ < v_lines_.size())
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+..\src\Buffer.cpp: In member function 'void Buffer::display() const':
+..\src\Buffer.cpp:16:9: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (i < v_lines_.size())
+       ~~^~~~~~~~~~~~~~~~~
+..\src\Buffer.cpp: In member function 'bool Buffer::search(const string&)':
+..\src\Buffer.cpp:24:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = ix_top_line_; i < v_lines_.size(); ++i) {
+                             ~~^~~~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test.o" "..\\src\\test.cpp" 
+In file included from ..\src\FileViewer.h:2:0,
+                 from ..\src\test.cpp:1:
+..\src\Buffer.h: In member function 'void Buffer::move_to_next_page()':
+..\src\Buffer.h:29:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  if (ix_top_line_ + window_height_ < v_lines_.size())
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+g++ -o FileViewer.exe "src\\Buffer.o" "src\\FileViewer.o" "src\\test.o" 
+
+08:26:21 Build Finished (took 3s.748ms)
+

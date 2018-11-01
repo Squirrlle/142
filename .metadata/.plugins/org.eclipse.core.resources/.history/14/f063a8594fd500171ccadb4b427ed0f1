@@ -1,0 +1,38 @@
+#include <iostream>
+#include<map>
+using std::map;
+using std::cout;
+using std::endl;
+using std::string;
+using std::getline;
+
+struct Book {
+
+	string author;
+	int yearPublished;
+
+};
+
+typedef map<string, Book> BookMap;
+
+template <typename T, class List>
+void print (List ls, T n){
+	if (n > ls.size){
+		for(T o : ls){
+			cout << o << endl;
+		}
+	}
+
+	else{
+
+		for(auto itr = ls.begin(); itr < ls.begin() + n; itr++){
+			cout << itr << endl;
+		}
+
+	}
+};
+
+
+int main() {
+	return 0;
+}

@@ -1,0 +1,12 @@
+15:56:39 **** Rebuild of configuration Debug for project song ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\song.o" "..\\src\\song.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'void print_double_spaced_cs(const char*)':
+..\src\main.cpp:10:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i = 0; i < strlen(cstr); i++) {
+                  ~~^~~~~~~~~~~~~~
+g++ -o song.exe "src\\main.o" "src\\song.o" 
+
+15:56:42 Build Finished (took 2s.415ms)
+

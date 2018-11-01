@@ -1,0 +1,13 @@
+16:13:31 **** Incremental Build of configuration Debug for project Asignment_8 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\String.o" "..\\src\\String.cpp" 
+..\src\String.cpp: In member function 'void String::replace(char, char, String&)':
+..\src\String.cpp:14:11: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+   if(y == i)
+           ^
+..\src\String.cpp:15:8: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+    y = m;
+        ^
+
+16:13:31 Build Finished (took 251ms)
+

@@ -1,0 +1,21 @@
+/*
+ * String.h
+ *
+ *  Created on: Nov 29, 2017
+ *      Author: hjcad
+ */
+
+#ifndef STRING_H_
+#define STRING_H_
+
+namespace std {
+
+class String {
+public:
+	String();
+	virtual ~String();
+};
+
+} /* namespace std */
+
+#endif /* STRING_H_ */

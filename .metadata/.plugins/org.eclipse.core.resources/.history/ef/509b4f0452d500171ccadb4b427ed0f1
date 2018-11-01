@@ -1,0 +1,52 @@
+#include <iostream>
+#include<map>
+#include <fstream>
+using std::map;
+using std::ifstream;
+using std::cout;
+using std::endl;
+using std::string;
+using std::getline;
+
+struct Book {
+
+	string author;
+	int yearPublished;
+
+};
+
+typedef map<string, Book> BookMap;
+
+void read_books(BookMap m_books,const string file_name){
+
+	string title, authors;
+	int year;
+	ifstream in (file_name);
+
+	if(in.is_open()){
+		getline(in, title);
+		getline(in, authors);
+		in >> year;
+		m_books[title] = {authors, year};
+	}
+}
+
+template<typename T, class List>
+void print(List ls, T n) {
+	if (n > ls.size) {
+		for (T o : ls) {
+			cout << o << endl;
+		}
+	} else {
+
+		for (auto itr = ls.begin(); itr < ls.begin() + n; itr++) {
+			cout << itr << endl;
+		}
+
+	}
+}
+;
+
+int main() {
+	return 0;
+}

@@ -1,0 +1,14 @@
+#ifndef STRING_H_
+#define STRING_H_
+
+template<class T>
+class String {
+public:
+	String() : buffer_ (''\0');
+	virtual ~String();
+
+	private:
+	buf
+};
+
+#endif /* STRING_H_ */

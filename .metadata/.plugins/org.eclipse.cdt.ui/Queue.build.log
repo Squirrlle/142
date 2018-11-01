@@ -1,0 +1,14 @@
+16:37:40 **** Incremental Build of configuration Debug for project Queue ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Queue.o" "..\\src\\Queue.cpp" 
+In file included from ..\src\Queue.cpp:2:0:
+..\src\LinkedList.h:40:5: error: 'template<class T> class LinkedList' used without template parameters
+ int LinkedList::size(){
+     ^~~~~~~~~~
+..\src\LinkedList.h: In function 'int size()':
+..\src\LinkedList.h:41:9: error: 'size_' was not declared in this scope
+  return size_;
+         ^~~~~
+
+16:37:41 Build Finished (took 581ms)
+

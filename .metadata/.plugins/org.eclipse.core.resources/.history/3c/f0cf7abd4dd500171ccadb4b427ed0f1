@@ -1,0 +1,9 @@
+#include <iostream>
+using std::cout;
+
+template <typename T, class List>
+
+
+int main() {
+	return 0;
+}

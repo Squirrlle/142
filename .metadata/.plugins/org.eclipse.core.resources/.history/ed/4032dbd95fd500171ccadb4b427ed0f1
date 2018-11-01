@@ -1,0 +1,35 @@
+#ifndef STRING_H_
+#define STRING_H_
+#include <stdio.h>
+#include <string.h>
+
+class String {
+public:
+	String() :
+			buffer_('\0') {
+		size_ = 0;
+	}
+	explicit String(char* user) :
+			buffer_(user) {
+		size_ = strlen(user) + 1;
+	}
+	String(const String & s) : String(s.c_str()) {}
+	~String() {
+		delete[] buffer_;
+	}
+	inline int length() {
+		return size_;
+	}
+	void clear();
+	inline char operator[](int indx) {
+		return *(buffer_ + indx);
+	}
+	inline char* c_str() {
+		return buffer_;
+	}
+private:
+	char* buffer_;
+	int size_;
+};
+
+#endif /* STRING_H_ */

@@ -1,0 +1,11 @@
+#include "String.h"
+
+int String::length(){
+	return size_;
+}
+
+void String::clear(){
+
+	delete[] buffer_;
+	buffer_ = '\0';
+}

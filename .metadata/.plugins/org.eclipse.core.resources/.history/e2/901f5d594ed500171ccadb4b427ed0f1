@@ -1,0 +1,16 @@
+#include <iostream>
+using std::cout;
+using std::endl;
+
+template <typename T, class List>
+void print (List ls, T n){
+	if (n > ls.size){
+		for(T o : ls){
+			cout << o << endl;
+		}
+	}
+};
+
+int main() {
+	return 0;
+}

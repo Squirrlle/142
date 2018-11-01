@@ -1,0 +1,9 @@
+#include "String.h"
+#include <stdio.h>
+#include <string.h>
+
+void String::clear(){
+	delete[] buffer_;
+	buffer_ = '\0';
+	size_ = 0;
+}

@@ -1,0 +1,7 @@
+14:36:53 **** Incremental Build of configuration Debug for project Assignment_7 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\meme.o" "..\\src\\meme.cpp" 
+g++ -o Assignment_7.exe "src\\meme.o" 
+
+14:36:55 Build Finished (took 1s.523ms)
+

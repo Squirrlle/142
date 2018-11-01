@@ -1,0 +1,16 @@
+#include "String.h"
+#include <stdio.h>
+#include <string.h>
+
+int String::length(){
+
+	size_ = strlen(user) + 1;
+
+	return size_;
+}
+
+void String::clear(){
+
+	delete[] buffer_;
+	buffer_ = '\0';
+}

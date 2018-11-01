@@ -1,0 +1,21 @@
+/*
+ * String.cpp
+ *
+ *  Created on: Nov 29, 2017
+ *      Author: hjcad
+ */
+
+#include "String.h"
+
+namespace std {
+
+String::String() {
+	// TODO Auto-generated constructor stub
+
+}
+
+String::~String() {
+	// TODO Auto-generated destructor stub
+}
+
+} /* namespace std */

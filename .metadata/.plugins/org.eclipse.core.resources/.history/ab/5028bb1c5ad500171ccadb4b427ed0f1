@@ -1,0 +1,12 @@
+#ifndef STRING_H_
+#define STRING_H_
+
+class String {
+public:
+	String() : buffer_('\0'){}
+
+	private:
+	char* buffer_;
+};
+
+#endif /* STRING_H_ */
